@@ -1,0 +1,40 @@
+#container {
+    position: relative;
+}
+
+.lego{
+    position: absolute;
+}
+
+.silver{ 
+    background-color: rgb(206, 206, 206);
+    width: 50px;
+    height: 50px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#sq1 {
+    left: 0px;
+}
+
+#sq2 {
+    left: 150px;
+}
+
+#sq3 {
+    background-color: red;
+    border-radius: 0px 0px 10px 10px;
+    height: 100px;
+    width: 200px;
+    left: 0px;
+    top: 50px;
+}
+
+#sq4 {
+    background-color:white;
+    border-radius: 0px 0px 5px 5px;
+    height: 50px;
+    width: 100px;
+    left: 50px;
+    top: 50px;
+}

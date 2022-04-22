@@ -1,0 +1,86 @@
+#container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+#Friends {
+    display: grid;
+    grid-template-rows: 15% 85%;
+    background-color: purple;
+    padding: 10px;
+}
+
+.friendslist {
+    display: grid;
+    align-content: space-between;
+}
+
+.friendname {
+    background-color: blueviolet;
+}
+
+#Chat {
+    display: grid;
+    grid-template-rows: 90% 10%;
+    background-color: rgb(209, 203, 203);
+}
+
+#history {
+    display: grid;
+    grid-gap: 5px;
+    align-content: flex-start;
+}
+
+.chatLine {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: min-content;
+    width: min-content;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.received {
+    background-color: red;
+    justify-self: right;
+}
+
+.sent {
+    background-color: green;
+    justify-self: left;
+}
+
+.msgText {
+    display: grid;
+    justify-self: left;
+    align-self: center;
+    margin: 2px;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.msgTime {
+    display: grid;
+    justify-self: right;
+    align-self: flex-end;
+    margin: 1px;
+    font-size: x-small;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#chatBox {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+}
+
+#msgBox {
+    width: auto;
+}
+
+#submitButton {
+    justify-self: right;
+    width: 100%;
+    background-color: blueviolet;
+}
