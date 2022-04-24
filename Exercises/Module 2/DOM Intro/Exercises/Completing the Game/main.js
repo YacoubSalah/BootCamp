@@ -11,7 +11,7 @@ upBotton.onclick = function () {
 const downBotton = document.getElementById("down")
 downBotton.onclick = function () {
     let currentTop = (parseInt(ball.style.top) || 0)
-    if (currentTop < 405) {
+    if (currentTop < 375) {
         ball.style.top = (currentTop + 15) + "px"
     }
 }
