@@ -4,7 +4,7 @@ const Tweeter = function () {
     _commentIdCounter = 6
 
     posts = [
-        {                   
+        {
             text: "First post!",
             id: "p1",
             comments: [
@@ -25,7 +25,7 @@ const Tweeter = function () {
     ]
 
 
-    GetPosts = () => console.log(this.posts)
+    GetPosts = () => this.posts
 
     AddPost = (postText) => {
         this._postIdCounter += 1
@@ -54,9 +54,9 @@ const Tweeter = function () {
                     id: "c" + (this._commentIdCounter)
                 }
                 this.posts[i].comments.push(newComment)
-            //return true
+                //return true
             }
-            
+
         }
 
     }
@@ -86,11 +86,3 @@ const Tweeter = function () {
 }
 
 const tweeter = Tweeter()
-tweeter.addPost("Hi All")
-tweeter.getPosts()
-/* tweeter.removePost("p3")
-tweeter.getPosts() */
-tweeter.addComment("p3", "Welcome To Tweeter")
-tweeter.getPosts()
-tweeter.removeComment("p3" , "c7")
-tweeter.getPosts()
